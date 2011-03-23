@@ -121,7 +121,7 @@ def ListEpisodes(sender, idCategorie, nomCategorie):
 		dureevideo = long(str_duree)*1000
 		description = description + '\n\nDiffusé le ' + date_diffusion + '\n' + 'Durée : ' + str(duree) + ' mn'
 		lienValide = "rtmp://m6dev.fcod.llnwd.net:443/a3100/d1/"
-		dir.Append(RTMPVideoItem(url = lienValide, clip = video, title = nom, subtitle = nomCategorie, summary = description, duration = dureevideo , thumb = image))
+		dir.Append(RTMPVideoItem(url = lienValide, width=640, height=375, clip = video, title = nom, subtitle = nomCategorie, summary = description, duration = dureevideo , thumb = image))
 	return dir
 	
 	
